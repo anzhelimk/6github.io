@@ -16,8 +16,33 @@ a{
     width: 1366px;
     margin: 0 auto;
 }
-body{
+/* body{
     background-color: #141414;
+} */
+.section-navigation{
+    background-color: #141414;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.section-main-screen{
+    background-color: #141414;
+    width: 100%;
+}
+.section-recomendation{
+    background-color: #141414;
+    width: 100%;
+}
+.section-compilation-films{
+    background-color: #141414;
+    width: 100%;
+}
+.section-discovery-week{
+    background-color: #141414;
+    width: 100%;
+}
+.section-form-subscribe{
+    background-color: #141414;
+    width: 100%;
 }
 .logo h1{
     font-family: 'Gol Bold';
@@ -71,7 +96,7 @@ body{
     background-size: cover;
 
     border-radius: 10px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     /* display: flex;
     flex-direction: column; */
 
@@ -164,10 +189,11 @@ body{
     justify-content: space-between;
 }
 .section-recomendation{
-    padding-bottom: 30px;
+    padding-bottom: 100px;
+
 }
 .section-compilation-films{
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 .photo-rec{
     background-image: url(../imgs/6.jpg);
@@ -178,7 +204,7 @@ body{
     background-size: cover;
 
     border-radius: 10px;
-    margin-top: 40px;
+    /* padding-top: 40px; */
 
     padding-top: 140px;
     padding-left: 90px;
@@ -265,6 +291,31 @@ body{
     grid-row: 3/4;
     grid-column: 4/6;
 } */
+.knopki-main .n-1, .n-2{
+    font-family: 'Gol Dem';
+    font-size: 0.9rem;
+    color: #f0f0f0;
+}
+.knopki-main .n-1{
+    padding: 15px 40px 15px 40px;
+    background: linear-gradient(90deg, #0553d7,#4c6efa, #6eaffc);
+    border-radius: 7px;
+    margin-right: 15px;
+}
+.knopki-main .n-2{
+    padding: 15px 25px 15px 25px;
+    background: linear-gradient(90deg, #000d21, #1a1c27);
+    border-radius: 7px;
+    margin-right: 15px;
+}
+.knopki-main .n-3{
+    padding: 15px 20px 15px 20px;
+    background: linear-gradient(90deg, #000d21, #1a1c27);
+    border-radius: 7px;
+}
+.knopki-main{
+    padding-top: 30px;
+}
 .photo-block{
     padding-left: 70px;
 }
@@ -336,15 +387,27 @@ body{
     display: flex;
     flex-direction: column;
 }
+.static{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-3{
+    display: flex;
+    flex-direction: column;
+    width: 729px;
+}
 .str-1{
     width: 437px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
 }
 .str-2{
     width: 494px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
 }
 .text-about{
     /* display: flex;
@@ -473,4 +536,294 @@ form .win input{
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
+}
+
+
+@media screen and (max-width: 480px){
+    .container {
+        width: 100%;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .icons{
+        padding-top: 15px;
+    }
+    .photo-main{
+        height: 250px;
+        width: 446px;
+        padding-top: 76px;
+        padding-left: 30px;
+    }
+    .ph{
+        display: flex;
+        justify-content: center;
+    }
+    .text-title h1{
+        font-size: 1.4rem;
+    }
+    .text-title p .s-1{
+        font-size: 0.4rem;
+    }
+    .text-title p{
+        font-size: 0.4rem;
+        padding-top: 5px;
+    }
+    .text-desc p{
+        font-size: 0.5rem;
+    }
+    .knopki-main {
+        padding-top: 4px;
+    }
+    .knopki-main .kn-1, .kn-2, .kn-3 img{
+        padding-right: 5px;
+    }
+    .knopki-main .kn-1, .kn-2, .kn-3 a{
+        font-size: 0.4rem;
+    }
+    /* .section-main-screen .knopki-main .kn-1, .kn-2, .kn-3 a{
+        font-size: 0.4rem;
+    } */
+    .ph .knopki-main .kn-3 a{
+        font-size: 0.4rem;
+    }
+    .knopki-main .kn-1{
+        padding: 8px 15px 8px 15px;
+        border-radius: 4px;
+    }
+    .knopki-main .kn-2{
+        padding: 8px 18px 8px 18px;
+        border-radius: 4px;
+    }
+    .knopki-main .kn-3{
+        padding: 6px 12px 6px 12px;
+        border-radius: 4px;
+
+    }
+    .title h1 {
+        font-size: 1.5rem;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .section-main-screen {
+        padding-bottom: 0;
+    }
+    .section-recomendation{
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .card{
+        padding-bottom: 20px;
+    }
+    .photo-rec {
+        height: 200px;
+        width: 456px;
+    }
+    .ph-comp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo-rec{
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+    .text-title p {
+        padding-bottom: 10px;
+    }
+    .discovery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .discovery .text-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+    }
+    .discovery .text-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+    }
+    .discovery .text-title h1{
+        font-size: 2rem;
+    }
+    .discovery .text-title p .s-1{
+        font-size: 1rem;
+        
+    }
+    .discovery .text-title p{
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+    .discovery .price{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-bottom: 40px;
+    }
+    .discovery .knopki-main .n-1, .n-2, .n-3 a{
+        font-size: 0.8rem;
+    }
+    .discovery .knopki-main .n-1, .n-2 img{
+        padding-right: 10px;
+    }
+    .discovery .knopki-main .n-1{
+        padding: 15px 30px 15px 30px;
+        border-radius: 7px;
+    }
+    .discovery .knopki-main .n-2 {
+        padding: 15px 18px 15px 18px;
+        border-radius: 4px;
+    }
+    .discovery .knopki-main .n-3 {
+        padding: 15px 12px 15px 12px;
+        border-radius: 4px;
+    }
+    .desc-discov {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .desc-discov .links{
+        padding-bottom: 15px;
+    }
+    .photo-block{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bess, .wom, .lad, .man, .sofa{
+        border-radius: 7px;
+    }
+    .bess{
+        padding-bottom: 30px;
+        width: 320px;
+    }
+    .wom, .lad, .man, .sofa{
+        padding-bottom: 30px;
+    }
+    .blok-h{
+        padding-bottom: 0px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-discovery-week {
+        padding-bottom: 30px;
+    }
+    .about {
+        padding-top: 60px;
+    }
+    .about img {
+        height: 290px;
+        width: 390px;
+    }
+    .text-about{
+        padding-left: 4 0px;
+        padding-top: 30px;
+    }
+    .text-about h1 {
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+    }
+    .text-about p {
+        font-size: 0.8rem;
+        padding-bottom: 20px;
+    }
+    /* .str-1 {
+        width: 307px;
+    }
+    .str-2 {
+        width: 324px;
+    } */
+    .section-about-us {
+        padding-bottom: 30px;
+    }
+    /* .static{
+        width: 480px;
+    } */
+    .about-3{
+        width: 419px;
+    }
+    .static-t h1{
+        font-size: 1.5rem;
+    }
+    .static-t p{
+        font-size: 1rem;
+    }
+    .sub{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .but{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cart-s{
+        width: 200px;
+        height: 140px;
+
+        margin-right: 0px;
+    }
+    .social img{
+        width: 10px;
+    }
+    .cards-sub{
+        padding-top: 30px;
+        padding-left: 0px;
+    }
+    .sogl {
+        padding-bottom: 20px;
+    }
+    .text-f p {
+        font-size: 0.4rem;
+    }
+    .text-f a {
+        font-size: 0.4rem;
+        border-bottom: none;
+    }
+    .social {
+        width: 50px;
+    }
+    .foot{
+        padding-top: 10px;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .section-footer{
+        padding-bottom: 10px;
+    }
+    .section-form-subscribe {
+        padding-bottom: 60px;
+    }
+    /* .cr .car-1{
+        margin-right: 40px;
+    } */
+    .cr-2, .cr {
+        display: flex;
+        justify-content: space-between;
+        width: 420px;
+    }
+    .str-1, .str-2, .static{
+        width: auto;
+    }
 }
